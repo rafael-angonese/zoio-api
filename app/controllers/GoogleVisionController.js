@@ -13,7 +13,7 @@ const key = {
     keyFilename: 'config/cloud-vision.json'
 }
 
-router.post('/all', /*security.verifyJWT,*/ async function (req, res) {
+router.post('/all', security.verifyJWT, async function (req, res) {
 
     try {
         
